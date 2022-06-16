@@ -1,0 +1,9 @@
+#!/bin/bash
+##Con el siguiente script se obtuvieron las proteínas que primero RASTtk anotó como hypothetical protein
+#y se combinaron las anotaciones en un archivo gff
+HPS=$(grep -i "hypothetical protein" ../PSI2/PSI2_rast_eggnog.txt | cut -d ";" -f1 | sed 's/ID=//g')
+for HP in ${HPS[@]};do
+functions_eggnog=$(awk -F '\t' -v HP='$HP' '$1==HP {print $9}' ../PSI2/PSI2.eggnog.gff | cut -d ";" -f9,11| sed 's!em_desc=!!g' | sed 's!(!!g'
+| sed 's!)!!g' | sed 's! !_!g')
+comando=$(echo 'sed -i 's!ID=$HP;Name=!Name=$functions_eggnog*!g'  CCGB01.ec-stripped.gff')
+echo $comand

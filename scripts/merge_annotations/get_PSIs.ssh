@@ -1,0 +1,6 @@
+#!/bin/bash
+##Con estas líneas de comando, del archivo de anotación con formato gff de eggNOG-mapper
+##se cortaron las islas genómicas de interés con base en sus coordenadas
+head -892 out.emapper.gff | tail -344 > PSI1.eggnog.gff
+head -6221 out.emapper.gff | tail -358 > PSI2.eggnog.gff
+head -7011 out.emapper.gff | tail -199 > PSI3.eggnog.gff

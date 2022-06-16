@@ -1,0 +1,7 @@
+#!/bin/bash
+##Con el siguiente script se obtuvo una lista de los IDs y anotaciones de RASTtk de cada PSI usando el archivo de eggNOG-mapper
+IDS_EggNOG=$(cut -f1 ../PSI1/PSI1.eggnog.gff) #Este archivo contiene las anotaciones de eggNOG-mapper de las PSIs de interés
+for ID_E in ${IDS_EggNOG[@]};do
+RAST_annotations=$(grep '$ID_E' ../../../data_cgenome/CCGB01_rast.gff | cut -f9)
+echo $RAST_annotations
+done
