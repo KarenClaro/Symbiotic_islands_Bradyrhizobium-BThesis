@@ -1,8 +1,8 @@
 ### *Symbiotic island predictions, phylogenetic and genomic analysis of Bradyrhizobium sp. CCGB01 isolated from nodules of Lysiloma sp. in Cuernavaca-Morelos-UNAM*
 
-This repository contains information related to my bachelor's thesis, which Ph.D. Ma. Esperanza Martinez-Romero supervised (Link to digital thesis: []()).
+This repository contains information related to my bachelor's thesis, which Ph.D. Ma. Esperanza Martinez-Romero supervised (Link to digital thesis: )
 
-     *B. sp. CCGB01* (which later was proposed as *B.* sp. nov. *lysilomae* []()) was isolated from the nodules of the leguminose *Lysiloma* sp. in Cuernava-Morelos, México.  Laboratory experiments were carried in Centro de Ciencias Genómicas, UNAM.
+     *B. sp. CCGB01* (which later was proposed as *B.* sp. nov. *lysilomae* ) was isolated from the nodules of the leguminose *Lysiloma* sp. in Cuernava-Morelos, México.  Laboratory experiments were carried in Centro de Ciencias Genómicas, UNAM.
 
 _____________________________
 
