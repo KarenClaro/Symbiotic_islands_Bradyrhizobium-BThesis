@@ -1,0 +1,12 @@
+#!/bin/bash
+##Con este script se obtienen los nombres de los genes del sistema de T4SS tipo T y si son accesosorios o mandatorios (class)
+##de reporte que arrojó el programa MAcsyFinder con el módulo CONJscan.
+TSS=$(awk -F '\t' '{print $1}' typeT.report | grep -v "#")
+for TS in ${TSS[@]};do
+genes=$(awk -F '\t' -v TS="$TS" '$1==TS {print $5}' typeT.report)
+class=$(awk -F '\t'  -v TS="$TS"  '$1==TS {print $10}' typeT.report)  
+
+comando=$(echo "sed -i 's!ID=$TS;Name=!Name=$genes-$class~!g' CCGB01.ec-stripped.gff")
+echo $comando
+
+done 
