@@ -64,5 +64,5 @@ one.way.plot <- one.way.plot +
   theme_classic2() +
   labs(
     x = "Strains",
-    y = "Ethylene (nm/hg)")
+    y = "Ethylene (nmol/hg)")
 one.way.plot
