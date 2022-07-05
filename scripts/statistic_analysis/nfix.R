@@ -31,6 +31,10 @@ summary(one.way)
 TukeyHSD(one.way)
 tukey<-TukeyHSD(one.way)
 
+aov_residuals <- residuals(object = one.way )
+shapiro.test(x = aov_residuals )#Prueba de normalidad de residuos
+bartlett.test(aov_residuals, strains)#Prueba de homogeneidad de varianzas de residuos
+
 #Graficando datos como puntos con errores estándar y  
 #agrupados de acuerdo con la prueba de Tukey
 
